@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 user-scalable=no"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--최신모드로 지정된 doctype에 상관없이 IE8 이상 버전에서 항상 최신 표준 모드로 렌더링.-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>LEE SANG KI</title>
 	<script src="js/jquery-1.12.4.min.js"></script>
   	<script src="js/jquery-ui.min.js"></script> 
@@ -60,7 +60,7 @@
 					<div class="background"></div>
 					<div class="title_wrap">
 						<h2 class="title">LEE SANG KI</h2>
-						<h3 class="sub_title">웹퍼블리셔 이상기 포트폴리오</h3>
+						<p class="sub_title">웹퍼블리셔 이상기 포트폴리오</p>
 						<div class="publisher">
 							<span class="published">UI/UX Designer &amp; Front-End Developer.</span>
 						</div>
@@ -335,6 +335,7 @@
 	<!-- // wrap -->
 	<script>
   		$(function(){
+  			// menu toggle 스크립트
   			$("#menu_toggle").on({
   				click : function(){
   					if($(this).hasClass("on") == true){
@@ -431,7 +432,7 @@
 
 								});
 
-							$(".btn_top button").click(function() {
+							$(".btn_top").click(function() {
 		        						$("html, body").animate({ scrollTop : 0 }, 500 );
 		   							 });
 
