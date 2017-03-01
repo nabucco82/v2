@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url("font/CircularStd-Book.woff") format("woff"); }
+@font-face {
+  font-family: "CircularStd-Medium";
+  src: url("font/CircularStd-Medium.woff") format("woff"); }
+@font-face {
+  font-family: "CircularStd-medium";
+  src: url("font/CircularStd-Medium.woff") format("woff"); }
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("font/NotoSansCJKkr-Medium.woff") format("woff"); }
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("font/NotoSansCJKkr-Light.woff") format("woff"); }
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("font/NotoSansCJKkr-Thin.woff") format("woff"); }
+@font-face {
+  font-family: "NanumBarunGothic";
+  src: url("font/NanumBarunGothic.eot") format("woff"); }
 html {
   font-size: 16px;
   color: #fff;
