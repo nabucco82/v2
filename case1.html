@@ -7,6 +7,7 @@
 	<title>CASE1 - LEE SANG KI</title>
 	<script src="js/jquery-1.12.4.min.js"></script>
   	<script src="js/jquery-ui.min.js"></script> 
+  	<link rel="stylesheet" type="text/css" href="css/reset.css">
   	<link rel="stylesheet" type="text/css" href="css/case1.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   	<script>
@@ -60,63 +61,32 @@
     });
   	</script>
 </head>
-<style type="text/css">
-@font-face {
-    font-family: "CircularStd-Book"; src: url("font/CircularStd-Book.woff") format("woff");
-}
-@font-face {
-	font-family: "CircularStd-Medium"; src : url("font/CircularStd-Medium.woff") format("woff");
-}
-@font-face {
-    font-family: "CircularStd-medium"; src: url("font/CircularStd-Medium.woff") format("woff");
-}
-@font-face {
-    font-family: "NotoSans-Medium"; src: url("font/NotoSansCJKkr-Medium.woff") format("woff");
-}
-
-@font-face {
-    font-family: "NotoSans-Light"; src: url("font/NotoSansCJKkr-Light.woff") format("woff");
-}
-@font-face {
-    font-family: "NotoSans-Thin"; src: url("font/NotoSansCJKkr-Thin.woff") format("woff");
-}
-
-@font-face {font-family:"NanumBarunGothic"; src:url("font/NanumBarunGothic.eot");}
-
-</style>
 <body>
-	<div id="skip"></div>
 	<div id="wrap">
+		<!-- header 시작-->
 		<div id="header">
-			<h1><a class="logo" href="index.html" title="logo"></a></h1>
+			<h1><a class="logo" href="index.html" title="logo">home</a></h1>
+			<!-- sidebar 시작 -->
 			<div class="sidebar">				
 				<ul class="categories">
-					<li class="category"><a href="about.html" title="about" class="on">About</a></li>
-					<li class="category"><a href="work.html" title="work">Work</a></li>
-					<li class="category"><a href="contact.html" title="contact">Contact</a></li>
+					<li class="category"><a href="#1" title="about" class="on">About</a></li>
+					<li class="category"><a href="#1" title="work">Work</a></li>
+					<li class="category"><a href="#1" title="contact">Contact</a></li>
 				</ul>
 			</div>
+			<!-- // sidebar 종료 -->
+			<!-- gnb 시작 -->
 			<div class="gnb">
 				<ul class="navigation">
-					<li class="item"><a href="about.html" title="">ABOUT</a></li>
-					<li class="item"><a href="work.html" title="">WORK</a></li>
-					<li class="item"><a href="contact.html" title="">CONTACT</a></li>
+					<li class="item"><a href="#1" title="ABOUT">ABOUT</a></li>
+					<li class="item"><a href="#1" title="Work">WORK</a></li>
+					<li class="item"><a href="#1" title="contact">CONTACT</a></li>
 				</ul>
-				<div class="action">
-					<a href="login" title="login" class="login">Log In</a>
-					<a href="signup" title="signup" class="btn btn_blue btn_med">Sign Up</a><a href="btnsearch" title="btnsearch" class="btn btn_square btn_gray btn_med btnSearch btn_square">
-						<svg width="14px" height="14px" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#afafaf">
-							<path d="M0,29 C0,28.1666625 0.29166375,27.4583363 0.875,26.875 L7.9375,19.8125 C6.64582688,17.7083228 6,15.4375122 6,13 C6,11.2395745 6.34374656,9.55729969 7.03125,7.953125 C7.71875344,6.34895031 8.64061922,4.96615164 9.796875,3.8046875 C10.9531308,2.64322336 12.3359295,1.71875344 13.9453125,1.03125 C15.5546955,0.343746562 17.2395745,0 19,0 C20.7604255,0 22.4427003,0.343746562 24.046875,1.03125 C25.6510497,1.71875344 27.0338484,2.64322336 28.1953125,3.8046875 C29.3567766,4.96615164 30.2812466,6.34895031 30.96875,7.953125 C31.6562534,9.55729969 32,11.2395745 32,13 C32,14.7604255 31.6562534,16.4427003 30.96875,18.046875 C30.2812466,19.6510497 29.3567766,21.0338484 28.1953125,22.1953125 C27.0338484,23.3567766 25.6510497,24.2812466 24.046875,24.96875 C22.4427003,25.6562534 20.7604255,26 19,26 C16.5520711,26 14.2812605,25.3489648 12.1875,24.046875 L5.125,31.125 C4.52083031,31.7083363 3.81250406,32 3,32 C2.18749594,32 1.47916969,31.7083363 0.875,31.125 C0.29166375,30.5416637 0,29.8333375 0,29 Z M11,13 C11,14.4479239 11.3567673,15.7864522 12.0703125,17.015625 C12.7838577,18.2447978 13.7552022,19.2161423 14.984375,19.9296875 C16.2135478,20.6432327 17.5520761,21 19,21 C20.0833387,21 21.1171826,20.7890646 22.1015625,20.3671875 C23.0859424,19.9453104 23.9374964,19.3750036 24.65625,18.65625 C25.3750036,17.9374964 25.9453104,17.0859424 26.3671875,16.1015625 C26.7890646,15.1171826 27,14.0833387 27,13 C27,11.9166613 26.7890646,10.8828174 26.3671875,9.8984375 C25.9453104,8.91405758 25.3750036,8.06250359 24.65625,7.34375 C23.9374964,6.62499641 23.0859424,6.05468961 22.1015625,5.6328125 C21.1171826,5.21093539 20.0833387,5 19,5 C17.5520761,5 16.2135478,5.35676727 14.984375,6.0703125 C13.7552022,6.78385773 12.7838577,7.75520219 12.0703125,8.984375 C11.3567673,10.2135478 11,11.5520761 11,13 L11,13 Z">
-							</path>
-						</g></g></svg>
-					</a>
-					<a href="btncheckout" title="btncheckout" class="btn btn_gray btn_med btncheckout btn_square">
-							<svg width="14px" height="14px" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#afafaf"><path d="M13.9967562,23.9944391 C15.1006725,23.9944391 16.043153,24.3849697 16.8242259,25.1660426 C17.6052988,25.9471155 17.9958293,26.889596 17.9958293,27.9935123 C17.9958293,29.0974287 17.6052988,30.0399091 16.8242259,30.820982 C16.043153,31.6020549 15.1006725,31.9925855 13.9967562,31.9925855 C12.8928398,31.9925855 11.9503593,31.6020549 11.1692864,30.820982 C10.3882136,30.0399091 9.99768297,29.0974287 9.99768297,27.9935123 C9.99768297,26.889596 10.3882136,25.9471155 11.1692864,25.1660426 C11.9503593,24.3849697 12.8928398,23.9944391 13.9967562,23.9944391 L13.9967562,23.9944391 Z M23.9944391,23.9944391 C25.0983555,23.9944391 26.0408359,24.3849697 26.8219088,25.1660426 C27.6029817,25.9471155 27.9935123,26.889596 27.9935123,27.9935123 C27.9935123,29.0974287 27.6029817,30.0399091 26.8219088,30.820982 C26.0408359,31.6020549 25.0983555,31.9925855 23.9944391,31.9925855 C22.8905228,31.9925855 21.9480423,31.6020549 21.1669694,30.820982 C20.3858965,30.0399091 19.9953659,29.0974287 19.9953659,27.9935123 C19.9953659,26.889596 20.3858965,25.9471155 21.1669694,25.1660426 C21.9480423,24.3849697 22.8905228,23.9944391 23.9944391,23.9944391 L23.9944391,23.9944391 Z M31.6176724,6.8265429 C32.013416,7.37850107 32.1019362,7.97731464 31.8832358,8.62300156 L27.8841627,20.6202211 C27.7487767,21.0367933 27.5066477,21.3700461 27.1577685,21.6199894 C26.8088893,21.8699327 26.4209622,21.9949025 25.9939757,21.9949025 L11.9972196,21.9949025 C11.570233,21.9949025 11.1797025,21.8699327 10.8256161,21.6199894 C10.4715297,21.3700461 10.2267972,21.0367933 10.0914112,20.6202211 L4.56144285,3.99907319 L1.99953659,3.99907319 C1.44757842,3.99907319 0.97633818,3.80380789 0.585801736,3.41327145 C0.195265293,3.02273501 0,2.55149477 0,1.99953659 C0,1.44757842 0.195265293,0.97633818 0.585801736,0.585801736 C0.97633818,0.195265293 1.44757842,0 1.99953659,0 L5.99860978,0 C6.42559629,0 6.81352334,0.124969787 7.16240256,0.374913111 C7.51128179,0.624856435 7.75341075,0.958109202 7.88879672,1.37468141 L9.4353133,5.99860978 L29.9930489,5.99860978 C30.6699787,5.99860978 31.2115145,6.27458473 31.6176724,6.8265429 L31.6176724,6.8265429 Z"></path></g></g></svg>
-					</a>
-			</div>
 			</div>
 			<div class="bar_background"></div>
 		</div>
+		<!-- // header 종료-->
+		<!-- menu_toggle 시작-->
 		<div id="menu_toggle">
 			<a href="#1" title="hamburger" class="hamburger">
 				<span class="before"></span>
@@ -124,8 +94,9 @@
 				<span class="after"></span>
 			</a>
 		</div>
-		<div id="content">
-			
+		<!-- // menu_toggle 종료-->
+		<!-- content 시작-->
+		<div id="content">			
 			<div class="product_wrap">
 				<div class="product_header">
 					<div class="background"></div>
@@ -134,153 +105,125 @@
 							<a href="#" title="#" class="btn btn_blue">HTML5</a>
 							<a href="#" title="#" class="btn btn_blue">CSS3</a> 
 							<a href="#" title="#" class="btn btn_blue">Design</a>
-							<!-- <a href="#" title="#" class="btn btn_blue">Web-Standards</a> -->
-							<!-- <div class="separation"></div> -->
 						</div>
 						<h2 class="title"><strong>테크웰</strong>기업웹사이트</h2>
 					</div>
 					<div class="beside">
-						<div class="prev">
+						<!-- <div class="prev">
 							<a href="#" title="prev">
 							PREV
 							<span class="prv_img">
 							</span>
 							</a>
-						</div>
+						</div> -->
 						<div class="next">
 							<a href="#" title="next">NEXT
 							<span class="next_img"></span>
 							</a>
 						</div>
 					</div>
-					<!-- <div class="header_footer">
-						<div class="left">
-							<div class="info">
-								<p class="address">
-									 1-6 Yarmouth Place<br/>
-									 Mayfair, London W1J 7BU
-								</p>
-								<p class="phone-email">
-									<a href="tel:+44 20 3725 7901" title="phone">+44 20 3725 7901</a>
-									<a href="#2" title="email">hello@republik-media.com</a>
-								</p>
+					<!-- header_footer 시작 -->
+					<div class="header_footer">
+						<!-- updown 시작-->
+						<div class="updown">
+							<div class="mouse">
+								<div class="wheel"></div>
 							</div>
-						</div> 
-						<div class="right">
-							<div class="socials">
-								
-									<a href="https://facebook.com/"" target="_blank">
-										<i class="fa fa-facebook"></i>
-									</a>
-									<a href="#" target="_blank">
-										<i class="fa fa-instagram"></i>
-									</a>
-									<a href="#" target="_blank">
-										<i class="fa fa-twitter""></i>
-									</a>
-							</div>
+							<span class="unu"></span> 
+							<span class="doi"></span> 
+							<span class="trei"></span> 
 						</div>
-					</div> -->
-					<div class="updown down">
-						<div class="mouse">
-							<div class="wheel"></div>
-						</div>
-						<span class="unu"></span> 
-						<span class="doi"></span> 
-						<span class="trei"></span> 
+						<!-- // updown 종료 -->
 					</div>
+					<!-- // header_footer 종료-->
 				</div> 
 			</div>
-				<div class="case_Study">
-					<div class="case_preview techwell">
-						<div class="title">
-							<div class="top">
-								<h2><strong>테크웰</strong>기업웹사이트</h2>
-								<span class="sub_title">TechWell Corporation</span>	
-							</div>
-							<div class="left">							
-								<span>(주)테크웰은 반도체 전문업체로 최첨단 기술을 잘 전달할 수 있도록 직접 제작한 영상과 이미지를 활용하여 사용자들에게 어렵지 않게 기능을 설명하고자 하였습니다. 또한 반응형 웹사이트로 제작하여 사용자의 접속환경에 최적화된 콘텐츠를 제공하고 있습니다. </span>
-							</div>
-							<div class="right">
-								<ul>
-								<li class="company">(주)테크웰</li>
-								<li class="openday">2014년 9월</li>
-								<li class="keyword">웹퍼블리싱, 웹디자인</li>
-								</ul>
-							</div>	
+			<div class="case_Study">
+				<div class="case_preview techwell">
+					<div class="title">
+						<div class="top">
+							<h2><strong>테크웰</strong>기업웹사이트</h2>
+							<span class="sub_title">TechWell Corporation</span>	
 						</div>
-						<div class="pre_content">
-							<!-- <div class="m_portrait first">
+						<div class="left">							
+							<span>(주)테크웰은 반도체 전문업체로 최첨단 기술을 잘 전달할 수 있도록 직접 제작한 영상과 이미지를 활용하여 사용자들에게 어렵지 않게 기능을 설명하고자 하였습니다. 또한 반응형 웹사이트로 제작하여 사용자의 접속환경에 최적화된 콘텐츠를 제공하고 있습니다. </span>
+						</div>
+						<div class="right">
+							<ul>
+							<li class="company">(주)테크웰</li>
+							<li class="openday">2014년 9월</li>
+							<li class="keyword">웹퍼블리싱, 웹디자인</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="pre_content">
+						<!-- <div class="m_portrait first">
 								<div class="frame">
 									<img src="img/joakimjansson-mobile-1.jpg" alt="joakimjansson-mobile-1">
 								</div>
-							</div> -->
-							<div class="t_portrait">
-								<div class="frame">
-									<img src="img/project_w_03_main.jpg" alt="techwell">
-								</div>
-							</div>
-							<!-- <div class="m_portrait">
-								<div class="frame">
-									<img src="img/joakimjansson-mobile-1.jpg" alt="joakimjansson-mobile-1">
-								</div>
-							</div> -->
-							
-						</div>
-						<div class="content1">
-							<img src="img/project_w_03_1.jpg" alt="이미지"/>
-						</div>
-						<div class="section_footer">
-							<button class="btn btn_blue fullpreview">자세히보기</button>
-							<a href="work.html" title="portfolio" class="btn btn_blue">List</a>
-						</div>
-						<div class="modal">
-							<button class="close">
-							<svg width="16px" height="16px" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-									<g fill="#ffffff">
-										<path d="M18.0185378,16.0002802 L31.9875103,2.03894584 L29.9813969,0.000345421604 L16,13.9817423 L2.01860308,0.000345421604 L0.012489713,2.03894584 L13.9814622,16.0002802 L-0.00375381455,29.9854962 L2.01040741,31.9996574 L16,18.0177142 L29.9895926,31.9996574 L32.0037538,29.9854962 L18.0185378,16.0002802 Z">
-										</path>
-									</g>
-								</g>	
-								</svg>
-							닫기
-							</button>
-							<div class="image">
-								<!-- <p class="detail">
-									<img src="img/project_w_03_main.jpg" alt="techwell">
-								</p> -->
-								<p class=detail>
-									<img src="img/project_w_03_1.jpg" alt="techwell">
-								</p>
+						</div> -->
+						<div class="t_portrait">
+							<div class="frame">
+								<img src="img/project_w_03_main.jpg" alt="techwell">
 							</div>
 						</div>
-						<script>
-							$(function(){
-								$('.fullpreview').on( 'click', function(){
-									// $('.case_preview .modal').find('popup').removeClass('popup');
-									$('.case_preview .modal').addClass('popup');
-								});
-
-								$('.close').on( 'click', function() {
-									
-									$('.modal').removeClass('popup');
-										
-
-
-								});
+						<!-- <div class="m_portrait">
+							<div class="frame">
+								<img src="img/joakimjansson-mobile-1.jpg" alt="joakimjansson-mobile-1">
+							</div>
+						</div> -->						
+					</div>
+					<div class="content1">
+						<img src="img/project_w_03_1.jpg" alt="이미지"/>
+					</div>
+					<div class="section_footer">
+						<button class="btn btn_blue fullpreview">자세히보기</button>
+						<a href="work.html" title="portfolio" class="btn btn_blue">List</a>
+					</div>
+					<div class="modal">
+						<button class="close">
+						<svg width="16px" height="16px" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g fill="#ffffff">
+									<path d="M18.0185378,16.0002802 L31.9875103,2.03894584 L29.9813969,0.000345421604 L16,13.9817423 L2.01860308,0.000345421604 L0.012489713,2.03894584 L13.9814622,16.0002802 L-0.00375381455,29.9854962 L2.01040741,31.9996574 L16,18.0177142 L29.9895926,31.9996574 L32.0037538,29.9854962 L18.0185378,16.0002802 Z">
+									</path>
+								</g>
+							</g>	
+							</svg>
+						닫기
+						</button>
+						<div class="image">
+							<p class=detail>
+								<img src="img/project_w_03_1.jpg" alt="techwell">
+							</p>
+						</div>
+					</div>
+					<script>
+						$(function(){
+							$('.fullpreview').on( 'click', function(){
+								// $('.case_preview .modal').find('popup').removeClass('popup');
+								$('.case_preview .modal').addClass('popup');
 							});
-						</script>
-						<script>
-												// prodcut_header 높이값 설정
+
+							$('.close').on( 'click', function() {
+								
+								$('.modal').removeClass('popup');
+									
+
+
+							});
+						});
+					</script>
+					<script>
+						// prodcut_header 높이값 설정
 						$(function(){
 							$(".product_header").height( $(window).height() );
 							var $windowH = $(window).height();
 								
 								$(".updown").on( 'click' , function(){
 									 $('html, body').stop().animate({
-            								scrollTop : $windowH
-       										 });
+	        								scrollTop : $windowH
+	   										 });
 									
 
 								});	
@@ -313,19 +256,24 @@
 								$(".btn_top").css("display" , "block" );
 							}
 						 });
-						</script>
-					</div>				
-				</div>
+					</script>
+				</div>				
 			</div>
 		</div>
+		<!-- // content 종료 -->
+		<!-- footer 시작-->
 		<div id="footer">
 			<span>2016 &copy; <strong>LEE SANG KI</strong> all rights resrerved.<br/>
 			본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들었습니다.</span>
 		</div>
+		<!-- // footer 종료 -->
+		<!-- btn_top 시작 -->
 		<div class="btn_top">
 			<button type="button" class="btn_top"></button>
 		</div>
+		<!-- // btn_top 종료 -->	
 	</div>
+	<!-- // wrap -->
 
 
 </body>
