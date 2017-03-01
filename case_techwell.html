@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="eur-kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--최신모드로 지정된 doctype에 상관없이 IE8 이상 버전에서 항상 최신 표준 모드로 렌더링.-->
+	<title>CASE1 - LEE SANG KI</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+  	<script src="js/jquery-ui.min.js"></script> 
+  	<link rel="stylesheet" type="text/css" href="css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="css/case1.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	<script>
+  		$(function(){
+  			$("#menu_toggle").on({
+  				click : function(){
+  					if($(this).hasClass("on") == true){
+  						$(this).removeClass("on");
+  						$("#header .sidebar").css({"width":"0px"});
+  						$("#header .gnb .action").css({"padding-right":"49px"});
+  					}else if($(this).hasClass("on") == false){
+  					$(this).addClass("on");
+  						$("#header .sidebar").css({"width":"230px"});
+  						$("#header .gnb .action").css({"padding-right":"210px"});
+  					}
+  				}
+  			});
+  			
+  		});
+  	</script>
+  	<script>
+  		$(window).scroll(function(){
+  			var st = $(window).scrollTop();
+  			console.log(st);
+  				$(".bar_background").css({"opacity": (st * 0.01) });
+  				$(".product_header .background").css({"opacity":(0.2- 0.001*st)});
+  				
+  			if( st > 100){
+  				$(".bar_background").css({"opacity": (st * 0.01) });
+  			} else{
+  				$(".bar_background").css({"opacity":0});
+  			}
+  		});
+  	</script>
+  	<script>
+  	var lastScrollTop = 0;
+    $(window).on('scroll', function() {
+        st = $(this).scrollTop();
+        if(st < lastScrollTop) {
+        	// upscroll code
+            // console.log('up 1');
+            $("#header").css({"top":"0"});
+        }
+        else {
+            // downscroll code
+            // console.log('down 1');
+            $("#header").css({"top":"-100px"});
+        }
+        lastScrollTop = st;
+        console.log(st);
+    });
+  	</script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- header 시작-->
+		<div id="header">
+			<h1><a class="logo" href="index.html" title="logo">home</a></h1>
+			<!-- sidebar 시작 -->
+			<div class="sidebar">				
+				<ul class="categories">
+					<li class="category"><a href="#1" title="about" class="on">About</a></li>
+					<li class="category"><a href="#1" title="work">Work</a></li>
+					<li class="category"><a href="#1" title="contact">Contact</a></li>
+				</ul>
+			</div>
+			<!-- // sidebar 종료 -->
+			<!-- gnb 시작 -->
+			<div class="gnb">
+				<ul class="navigation">
+					<li class="item"><a href="#1" title="ABOUT">ABOUT</a></li>
+					<li class="item"><a href="#1" title="Work">WORK</a></li>
+					<li class="item"><a href="#1" title="contact">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="bar_background"></div>
+		</div>
+		<!-- // header 종료-->
+		<!-- menu_toggle 시작-->
+		<div id="menu_toggle">
+			<a href="#1" title="hamburger" class="hamburger">
+				<span class="before"></span>
+				<span class="middle"></span>
+				<span class="after"></span>
+			</a>
+		</div>
+		<!-- // menu_toggle 종료-->
+		<!-- content 시작-->
+		<div id="content">			
+			<div class="product_wrap">
+				<div class="product_header">
+					<div class="background techwell"></div>
+					<div class="title_wrap">
+						<div class="sub_title">
+							<a href="#" title="#" class="btn btn_blue">HTML5</a>
+							<a href="#" title="#" class="btn btn_blue">CSS3</a> 
+							<a href="#" title="#" class="btn btn_blue">Design</a>
+						</div>
+						<h2 class="title"><strong>테크웰</strong>기업웹사이트</h2>
+					</div>
+					<div class="beside">
+						<!-- <div class="prev">
+							<a href="#" title="prev">
+							PREV
+							<span class="prv_img">
+							</span>
+							</a>
+						</div> -->
+						<div class="next">
+							<a href="#" title="next">NEXT
+							<span class="next_img"></span>
+							</a>
+						</div>
+					</div>
+					<!-- header_footer 시작 -->
+					<div class="header_footer">
+						<!-- updown 시작-->
+						<div class="updown">
+							<div class="mouse">
+								<div class="wheel"></div>
+							</div>
+							<span class="unu"></span> 
+							<span class="doi"></span> 
+							<span class="trei"></span> 
+						</div>
+						<!-- // updown 종료 -->
+					</div>
+					<!-- // header_footer 종료-->
+				</div> 
+			</div>
+			<div class="case_Study">
+				<div class="case_preview techwell">
+					<div class="title">
+						<div class="top">
+							<h2><strong>테크웰</strong>기업웹사이트</h2>
+							<span class="sub_title">TechWell Corporation</span>	
+						</div>
+						<div class="left">							
+							<span>(주)테크웰은 반도체 전문업체로 최첨단 기술을 잘 전달할 수 있도록 직접 제작한 영상과 이미지를 활용하여 사용자들에게 어렵지 않게 기능을 설명하고자 하였습니다. 또한 반응형 웹사이트로 제작하여 사용자의 접속환경에 최적화된 콘텐츠를 제공하고 있습니다. </span>
+						</div>
+						<div class="right">
+							<ul>
+							<li class="company">(주)테크웰</li>
+							<li class="openday">2014년 9월</li>
+							<li class="keyword">웹퍼블리싱, 웹디자인</li>
+							</ul>
+						</div>	
+					</div>
+					<div class="pre_content">
+						<!-- <div class="m_portrait first">
+								<div class="frame">
+									<img src="img/joakimjansson-mobile-1.jpg" alt="joakimjansson-mobile-1">
+								</div>
+						</div> -->
+						<div class="t_portrait">
+							<div class="frame">
+								<img src="img/project_techwell01.jpg" alt="techwell">
+							</div>
+						</div>
+						<!-- <div class="m_portrait">
+							<div class="frame">
+								<img src="img/joakimjansson-mobile-1.jpg" alt="joakimjansson-mobile-1">
+							</div>
+						</div> -->						
+					</div>
+					<div class="content1">
+						<img src="img/project_techwell00.png" alt="이미지"/>
+					</div>
+					<div class="section_footer">
+						<button class="btn btn_blue fullpreview">자세히보기</button>
+						<a href="index.html" title="portfolio" class="btn btn_blue">List</a>
+					</div>
+					<div class="modal">
+						<button class="close">
+						<svg width="16px" height="16px" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g fill="#ffffff">
+									<path d="M18.0185378,16.0002802 L31.9875103,2.03894584 L29.9813969,0.000345421604 L16,13.9817423 L2.01860308,0.000345421604 L0.012489713,2.03894584 L13.9814622,16.0002802 L-0.00375381455,29.9854962 L2.01040741,31.9996574 L16,18.0177142 L29.9895926,31.9996574 L32.0037538,29.9854962 L18.0185378,16.0002802 Z">
+									</path>
+								</g>
+							</g>	
+							</svg>
+						닫기
+						</button>
+						<div class="image">
+							<p class=detail>
+								<img src="img/project_techwell02.jpg" alt="techwell">
+							</p>
+						</div>
+					</div>
+					<script>
+						$(function(){
+							$('.fullpreview').on( 'click', function(){
+								// $('.case_preview .modal').find('popup').removeClass('popup');
+								$('.case_preview .modal').addClass('popup');
+							});
+
+							$('.close').on( 'click', function() {
+								
+								$('.modal').removeClass('popup');
+									
+
+
+							});
+						});
+					</script>
+					<script>
+						// prodcut_header 높이값 설정
+						$(function(){
+							$(".product_header").height( $(window).height() );
+							var $windowH = $(window).height();
+								
+								$(".updown").on( 'click' , function(){
+									 $('html, body').stop().animate({
+	        								scrollTop : $windowH
+	   										 });
+									
+
+								});	
+
+
+							$(window).resize(function(){
+								$(".product_header").height( $(window).height());
+										var $windowH2 = $(window).height();
+
+									$(".updown").on( 'click' , function(){
+										 $('html, body').stop().animate({
+	            								scrollTop : $windowH2
+	       										 }, 500);
+									$("#header").css({"top":"0"});
+
+									});	
+								});
+							$(".btn_top button").click(function() {
+		        				$("html, body").animate({ scrollTop : 0 }, 500 );
+		   					 });
+
+						});
+						 
+
+						 $(window).scroll( function() {
+						 	if( $(document).scrollTop() < $(window).height()){
+								$(".btn_top").css("display" ,"none");
+
+							}else{
+								$(".btn_top").css("display" , "block" );
+							}
+						 });
+					</script>
+				</div>				
+			</div>
+		</div>
+		<!-- // content 종료 -->
+		<!-- footer 시작-->
+		<div id="footer">
+			<span>2016 &copy; <strong>LEE SANG KI</strong> all rights resrerved.<br/>
+			본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들었습니다.</span>
+		</div>
+		<!-- // footer 종료 -->
+		<!-- btn_top 시작 -->
+		<div class="btn_top">
+			<button type="button" class="btn_top"></button>
+		</div>
+		<!-- // btn_top 종료 -->	
+	</div>
+	<!-- // wrap -->
+
+
+</body>
+</html>
