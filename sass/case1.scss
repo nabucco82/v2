@@ -26,7 +26,6 @@
     }
     // case background image edit here
     .background {
-      background: url("../img/techwell_top.jpg") center 0/cover no-repeat #efefef;
       background-repeat: no-repeat;      
       position: absolute;
       opacity: 0.2;
@@ -36,6 +35,13 @@
       width: 100%;
       height: 100%;
       background-attachment: fixed;
+
+      &.techwell{
+        background: url("../img/techwell_top.jpg") center 0/cover no-repeat #efefef;
+      }
+      &.engineering{
+        background: url("../img/bg_engineering.jpg") center 0/cover no-repeat #efefef;
+      }
            
     }
     .title_wrap {
