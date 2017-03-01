@@ -8,7 +8,7 @@
 	<script src="js/jquery-1.12.4.min.js"></script>
   	<script src="js/jquery-ui.min.js"></script> 
   	<script src='js/isotope.pkgd.min.js'></script>
-  	<line rel="stylesheet" type="text/css" href="css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="css/reset.css">
   	<link rel="stylesheet" type="text/css" href="css/index.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   	<!--[if lt IE 9]>
@@ -17,9 +17,12 @@
 	<![endif]-->
 </head>
 <body>
+	<!-- wrap -->	
 	<div id="wrap">
+		<!-- header 시작-->
 		<div id="header">
 			<h1><a class="logo" href="index.html" title="logo">home</a></h1>
+			<!-- sidebar 시작 -->
 			<div class="sidebar">				
 				<ul class="categories">
 					<li class="category"><a href="#1" title="about" class="on">About</a></li>
@@ -27,24 +30,19 @@
 					<li class="category"><a href="#1" title="contact">Contact</a></li>
 				</ul>
 			</div>
+			<!-- // sidebar 종료 -->
+			<!-- gnb 시작 -->
 			<div class="gnb">
 				<ul class="navigation">
-					<li class="item"><a href="#1" title="">ABOUT</a></li>
-					<li class="item"><a href="#1" title="">WORK</a></li>
-					<li class="item"><a href="#1" title="">CONTACT</a></li>
+					<li class="item"><a href="#1" title="ABOUT">ABOUT</a></li>
+					<li class="item"><a href="#1" title="Work">WORK</a></li>
+					<li class="item"><a href="#1" title="contact">CONTACT</a></li>
 				</ul>
-				<div class="action">
-					<a href="login" title="login" class="login">Log In</a>
-					<a href="signup" title="signup" class="btn btn_blue btn_med">Sign Up</a><a href="btnsearch" title="btnsearch" class="btn btn_square btn_gray btn_med btnSearch btn_square">
-						<svg width="14px" height="14px" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#afafaf">
-							<path d="M0,29 C0,28.1666625 0.29166375,27.4583363 0.875,26.875 L7.9375,19.8125 C6.64582688,17.7083228 6,15.4375122 6,13 C6,11.2395745 6.34374656,9.55729969 7.03125,7.953125 C7.71875344,6.34895031 8.64061922,4.96615164 9.796875,3.8046875 C10.9531308,2.64322336 12.3359295,1.71875344 13.9453125,1.03125 C15.5546955,0.343746562 17.2395745,0 19,0 C20.7604255,0 22.4427003,0.343746562 24.046875,1.03125 C25.6510497,1.71875344 27.0338484,2.64322336 28.1953125,3.8046875 C29.3567766,4.96615164 30.2812466,6.34895031 30.96875,7.953125 C31.6562534,9.55729969 32,11.2395745 32,13 C32,14.7604255 31.6562534,16.4427003 30.96875,18.046875 C30.2812466,19.6510497 29.3567766,21.0338484 28.1953125,22.1953125 C27.0338484,23.3567766 25.6510497,24.2812466 24.046875,24.96875 C22.4427003,25.6562534 20.7604255,26 19,26 C16.5520711,26 14.2812605,25.3489648 12.1875,24.046875 L5.125,31.125 C4.52083031,31.7083363 3.81250406,32 3,32 C2.18749594,32 1.47916969,31.7083363 0.875,31.125 C0.29166375,30.5416637 0,29.8333375 0,29 Z M11,13 C11,14.4479239 11.3567673,15.7864522 12.0703125,17.015625 C12.7838577,18.2447978 13.7552022,19.2161423 14.984375,19.9296875 C16.2135478,20.6432327 17.5520761,21 19,21 C20.0833387,21 21.1171826,20.7890646 22.1015625,20.3671875 C23.0859424,19.9453104 23.9374964,19.3750036 24.65625,18.65625 C25.3750036,17.9374964 25.9453104,17.0859424 26.3671875,16.1015625 C26.7890646,15.1171826 27,14.0833387 27,13 C27,11.9166613 26.7890646,10.8828174 26.3671875,9.8984375 C25.9453104,8.91405758 25.3750036,8.06250359 24.65625,7.34375 C23.9374964,6.62499641 23.0859424,6.05468961 22.1015625,5.6328125 C21.1171826,5.21093539 20.0833387,5 19,5 C17.5520761,5 16.2135478,5.35676727 14.984375,6.0703125 C13.7552022,6.78385773 12.7838577,7.75520219 12.0703125,8.984375 C11.3567673,10.2135478 11,11.5520761 11,13 L11,13 Z">
-							</path>
-						</g></g></svg>
-					</a>
-				</div>
 			</div>
 			<div class="bar_background"></div>
 		</div>
+		<!-- // header 종료-->
+		<!-- menu_toggle 시작-->
 		<div id="menu_toggle">
 			<a href="#1" title="hamburger" class="hamburger">
 				<span class="before"></span>
@@ -52,19 +50,22 @@
 				<span class="after"></span>
 			</a>
 		</div>
+		<!-- // menu_toggle 종료-->
+		<!-- content 시작-->
 		<div id="content">
+			<!-- product_wrap 시작 -->
 			<div class="product_wrap">
+				<!-- product_header 시작 -->
 				<div class="product_header">
-					<div class="background">
-					</div>
+					<div class="background"></div>
 					<div class="title_wrap">
 						<h2 class="title">LEE SANG KI</h2>
-						<h4 class="sub_title">웹퍼블리셔 이상기 포트폴리오</h4>
+						<h3 class="sub_title">웹퍼블리셔 이상기 포트폴리오</h3>
 						<div class="publisher">
 							<span class="published">UI/UX Designer &amp; Front-End Developer.</span>
-
 						</div>
 					</div>
+					<!-- header_footer 시작 -->
 					<div class="header_footer">
 						<div class="left">
 							<div class="info">
@@ -84,15 +85,16 @@
 										<a href="https://facebook.com/" target="_blank" title="facebook">
 											<i class="fa fa-facebook"></i>
 										</a>
-										<a href="#" target="_blank" title="instagram">
+										<a href="#" target="https://instagram.com" title="instagram">
 											<i class="fa fa-instagram"></i>
 										</a>
-										<a href="#" target="_blank" title="github">
+										<a href="https://github.com/nabucco82" target="_blank" title="github">
 											<i class="fa fa-github""></i>
 										</a>
 							</div>
 						</div>
-						<div class="updown down">
+						<!-- updown 시작-->
+						<div class="updown">
 							<div class="mouse">
 								<div class="wheel"></div>
 							</div>
@@ -100,15 +102,19 @@
 							<span class="doi"></span> 
 							<span class="trei"></span> 
 						</div>
+						<!-- // updown 종료 -->
 					</div>
+					<!-- // header_footer 종-->
 				</div>
 				<div class="product_content_wrap">
+					<!-- product_content 시작 -->
 					<div class="product_content">
 						<div class="tab_menu filter-group">
 							<button class="tab" data-filter="*">All</button>
 							<button class="tab" data-filter=".web">Web</button>
 							<button class="tab" data-filter=".design">Design</button>
 						</div>
+						<!-- panes masonry 시작 -->
 						<ul class="panes masonry">
 							<li class="card kolon web">
 								<div class="card_wrap">
@@ -302,35 +308,31 @@
 								</div>
 							</li>	   						
 						</ul>
+						<!-- // panes masonry 종료 -->
 					</div>
 				</div>
-				<video autoplay>
-					<source src="video/notebook_480.mp4" type="video/mp4">
-				</video>
+				<div class="video_content">
+					<video autoplay>
+						<source src="video/notebook_480.mp4" type="video/mp4">
+					</video>
+				</div>
 			</div>
+			<!-- // product_wrap 종료 -->
 		</div>
+		<!-- // content 종료 -->
+		<!-- footer 시작-->
 		<div id="footer">
 			<span>2016 &copy; <strong>LEE SANG KI</strong> all rights resrerved.<br/>
 			본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들었습니다.</span>
 		</div>
+		<!-- // footer 종료 -->
+		<!-- btn_top 시작 -->
 		<div class="btn_top">
 			<button type="button" class="btn_top"></button>
 		</div>
-		
+		<!-- // btn_top 종료 -->	
 	</div>
-	<!-- <script type='text/javascript' src='js/jquery.particleground.js'></script> -->
-	<!-- <script>
-		$(document).ready(function() {
-		  $('.background').particleground({
-		    dotColor: '#5cbdaa',
-		    lineColor: '#5cbdaa'
-		  });
-		  // $('.intro').css({
-		  //   'margin-top': -($('.intro').height() / 2)
-		  // });
-	});
-
-	</script> -->
+	<!-- // wrap -->
 	<script>
   		$(function(){
   			$("#menu_toggle").on({
@@ -363,7 +365,6 @@
   			// 	$(".bar_background").css({"opacity":0});
   			// }
   		});
-
   	</script>
   	<script>
   	var lastScrollTop = 0;
