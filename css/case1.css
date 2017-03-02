@@ -417,6 +417,10 @@ h3 {
           background-position: center center;
           opacity: 0;
           transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1); }
+          #content .product_wrap .product_header .beside .prev .prv_img.techwell {
+            background-image: url("../img/project_techwell00.jpg"); }
+          #content .product_wrap .product_header .beside .prev .prv_img.engineering {
+            background-image: url("../img/project_engineeringl00.jpg"); }
         #content .product_wrap .product_header .beside .prev:hover .prv_img {
           margin-top: 50px;
           opacity: 1; }
@@ -455,6 +459,10 @@ h3 {
           background-position: center center;
           opacity: 0;
           transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1); }
+          #content .product_wrap .product_header .beside .next .next_img.techwell {
+            background-image: url("../img/project_techwell00.png"); }
+          #content .product_wrap .product_header .beside .next .next_img.engineering {
+            background-image: url("../img/project_engineeringl00.jpg"); }
         #content .product_wrap .product_header .beside .next:hover .next_img {
           margin-top: 50px;
           opacity: 1; }
