@@ -1,30 +1,14 @@
-* {
-  margin: 0;
-  padding: 0; }
-
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url("../font/CircularStd-Book.woff") format("woff"); }
 html {
   font-size: 16px;
   color: #fff;
   background-color: #353535;
   font-family: "CircularStd-Book"; }
-
-li {
-  list-style: none; }
-
-button {
-  display: block;
-  border: 0;
-  background: transparent;
-  outline: none; }
-
-legend, caption, figcaption {
-  display: none; }
-
-input, select {
-  border: 0; }
-
-fieldset {
-  border: none; }
 
 a:link, a:visited {
   text-decoration: none;
@@ -33,6 +17,12 @@ a:link, a:visited {
 ::selection {
   background: #2F8BE6;
   color: #fff; }
+
+button {
+  display: block;
+  border: 0;
+  background: transparent;
+  outline: none; }
 
 h2 {
   font-size: 32px;
@@ -53,7 +43,6 @@ h3 {
   cursor: pointer;
   color: #fff;
   padding: 16px;
-  height: 16px;
   line-height: 16px; }
   .btn.btn_white {
     background-color: #fff;
@@ -108,7 +97,10 @@ h3 {
     background-size: 44px 38px;
     text-indent: -9999px; }
     #header h1 a {
-      display: block; }
+      display: block;
+      width: 44px;
+      height: 38px;
+      cursor: pointer; }
   #header .sidebar {
     position: fixed;
     top: 0;
@@ -166,6 +158,9 @@ h3 {
     padding-right: 25px;
     transition: all 500s ease-in;
     box-sizing: border-box; }
+    @media screen and (max-width: 425px) {
+      #header .gnb {
+        display: none; } }
     #header .gnb .navigation {
       position: relative;
       float: left;
@@ -228,6 +223,83 @@ h3 {
     opacity: 0;
     box-shadow: 0px 2px 18px rgba(42, 42, 42, 0.3);
     z-index: -1; }
+
+#menu_toggle {
+  position: fixed;
+  top: 26px;
+  right: 25px;
+  z-index: 400;
+  backface-visibility: hidden; }
+  #menu_toggle .hamburger {
+    position: relative;
+    width: 38px;
+    height: 26px;
+    display: block;
+    z-index: 1;
+    cursor: pointer;
+    z-index: 400; }
+    #menu_toggle .hamburger .before, #menu_toggle .hamburger .after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 0 0 0 -10px;
+      width: 20px;
+      height: 2px;
+      background-color: #2F8BE6;
+      transition: width 200ms ease,opacity 200ms ease;
+      transition: transform 200ms ease, -webkit-transform 200ms ease; }
+    #menu_toggle .hamburger .middle {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      margin: 0 0 0 -10px;
+      width: 20px;
+      height: 2px;
+      background-color: #2F8BE6;
+      transition: width 200ms ease,opacity 200ms ease; }
+    #menu_toggle .hamburger .before {
+      -webkit-transform: translate3d(0, 20px, 0); }
+    #menu_toggle .hamburger .after {
+      -webkit-transform: translate3d(0, 4px, 0); }
+  #menu_toggle.on .hamburger .before {
+    -webkit-transform: rotate(45deg) translate3d(8px, 8px, 0); }
+  #menu_toggle.on .hamburger .after {
+    -webkit-transform: rotate(-45deg) translate3d(-8px, 8px, 0); }
+  #menu_toggle.on .hamburger .middle {
+    width: 0;
+    opacity: 0; }
+
+#footer {
+  font-family: "Lato";
+  font-weight: 400;
+  background-color: #2a2a2a;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 30px;
+  text-transform: uppercase; }
+  #footer span {
+    font-weight: 800;
+    font-size: 11px;
+    color: #9397a5;
+    letter-spacing: -0.25px; }
+    #footer span strong {
+      color: #2F8BE6; }
+
+.btn_top {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: 514px;
+  display: none;
+  width: 61px;
+  height: 60px; }
+  .btn_top button {
+    background-image: url("../img/btn_top.png");
+    background-position: 0 -60px;
+    background-repeat: no-repeat; }
+    .btn_top button:hover {
+      background-position: 0 0; }
 
 #content {
   position: relative;

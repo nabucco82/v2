@@ -1,24 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @font-face {
   font-family: "CircularStd-Book";
-  src: url("font/CircularStd-Book.woff") format("woff"); }
-@font-face {
-  font-family: "CircularStd-Medium";
-  src: url("font/CircularStd-Medium.woff") format("woff"); }
-@font-face {
-  font-family: "CircularStd-medium";
-  src: url("font/CircularStd-Medium.woff") format("woff"); }
-@font-face {
-  font-family: "NotoSans-Medium";
-  src: url("font/NotoSansCJKkr-Medium.woff") format("woff"); }
-@font-face {
-  font-family: "NotoSans-Light";
-  src: url("font/NotoSansCJKkr-Light.woff") format("woff"); }
-@font-face {
-  font-family: "NotoSans-Thin";
-  src: url("font/NotoSansCJKkr-Thin.woff") format("woff"); }
-@font-face {
-  font-family: "NanumBarunGothic";
-  src: url("font/NanumBarunGothic.eot") format("woff"); }
+  src: url("../font/CircularStd-Book.woff") format("woff"); }
 html {
   font-size: 16px;
   color: #fff;
@@ -112,7 +97,10 @@ h3 {
     background-size: 44px 38px;
     text-indent: -9999px; }
     #header h1 a {
-      display: block; }
+      display: block;
+      width: 44px;
+      height: 38px;
+      cursor: pointer; }
   #header .sidebar {
     position: fixed;
     top: 0;
@@ -170,7 +158,7 @@ h3 {
     padding-right: 25px;
     transition: all 500s ease-in;
     box-sizing: border-box; }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 425px) {
       #header .gnb {
         display: none; } }
     #header .gnb .navigation {
@@ -282,16 +270,19 @@ h3 {
     opacity: 0; }
 
 #footer {
+  font-family: "Lato";
+  font-weight: 400;
   background-color: #2a2a2a;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  padding: 20px 30px 0 30px;
+  padding: 30px;
   text-transform: uppercase; }
   #footer span {
+    font-weight: 800;
     font-size: 11px;
     color: #9397a5;
-    letter-spacing: 1px; }
+    letter-spacing: -0.25px; }
     #footer span strong {
       color: #2F8BE6; }
 
@@ -340,25 +331,49 @@ h3 {
       z-index: 0;
       width: 100%;
       height: 100%;
-      background-attachment: fixed; }
+      background-attachment: fixed;
+      -webkit-filter: blur(2px) grayscale(100%);
+      -ms-filter: blur(2px) grayscale(100%);
+      filter: blur(2px) grayscale(100%); }
+      #content .product_wrap .product_header .background.kolon {
+        background: url("../img/project_kolon00.jpg") center 0/cover no-repeat #efefef; }
       #content .product_wrap .product_header .background.techwell {
-        background: url("../img/techwell_top.jpg") center 0/cover no-repeat #efefef; }
+        background: url("../img/project_techwell00.png") center 0/cover no-repeat #efefef; }
       #content .product_wrap .product_header .background.engineering {
-        background: url("../img/bg_engineering.jpg") center 0/cover no-repeat #efefef; }
+        background: url("../img/project_engineering00.jpg") center 0/cover no-repeat #efefef; }
+      #content .product_wrap .product_header .background.iwiil {
+        background: url("../img/project_iwiil00.jpg") center 0/cover no-repeat #efefef; }
+      #content .product_wrap .product_header .background.beanspreso {
+        background: url("../img/project_beanspreso00.jpg") center 0/cover no-repeat #efefef; }
+      #content .product_wrap .product_header .background.songdo {
+        background: url("../img/project_songdo00.jpg") center 0/cover no-repeat #efefef; }
+      #content .product_wrap .product_header .background.webzine {
+        background: url("../img/project_webzin00.jpg") center 0/cover no-repeat #efefef; }
     #content .product_wrap .product_header .title_wrap {
       position: absolute;
       margin: 0 auto;
       width: 100%;
       top: 50%;
-      margin-top: -45px;
+      margin-top: -83px;
       text-align: center; }
       #content .product_wrap .product_header .title_wrap .title {
-        font-size: 55px;
+        font-size: 45px;
+        font-weight: 200;
+        line-height: 55px;
         margin: 10px 0 10px 0;
-        font-family: 'NotoSans-Light'; }
-        @media screen and (max-width: 450px) {
+        font-family: 'Noto Sans KR', sans-serif; }
+        @media screen and (max-width: 768px) {
           #content .product_wrap .product_header .title_wrap .title {
             font-size: 30px; } }
+        #content .product_wrap .product_header .title_wrap .title strong {
+          font-size: 55px;
+          display: block;
+          margin-bottom: 10px;
+          color: #fff;
+          line-height: 55px; }
+          @media screen and (max-width: 768px) {
+            #content .product_wrap .product_header .title_wrap .title strong {
+              font-size: 45px; } }
       #content .product_wrap .product_header .title_wrap:hover .title:after {
         width: 400px;
         margin-left: -200px; }
@@ -416,11 +431,21 @@ h3 {
           background-image: url("../img/project03.jpg");
           background-position: center center;
           opacity: 0;
+          -webkit-transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+          -ms-transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1);
           transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1); }
+          #content .product_wrap .product_header .beside .prev .prv_img.kolon {
+            background: url("../img/project_kolon00.jpg") center no-repeat; }
           #content .product_wrap .product_header .beside .prev .prv_img.techwell {
-            background-image: url("../img/project_techwell00.jpg"); }
+            background: url("../img/project_techwell00.png") center no-repeat; }
           #content .product_wrap .product_header .beside .prev .prv_img.engineering {
-            background-image: url("../img/project_engineeringl00.jpg"); }
+            background: url("../img/project_engineering00.jpg") center no-repeat; }
+          #content .product_wrap .product_header .beside .prev .prv_img.beanspreso {
+            background: url("../img/project_beanspreso00.jpg"); }
+          #content .product_wrap .product_header .beside .prev .prv_img.songdo {
+            background: url("../img/project_songdo00.jpg") center no-repeat; }
+          #content .product_wrap .product_header .beside .prev .prv_img.webzine {
+            background: url("../img/project_webzin00.jpg") center no-repeat; }
         #content .product_wrap .product_header .beside .prev:hover .prv_img {
           margin-top: 50px;
           opacity: 1; }
@@ -440,6 +465,8 @@ h3 {
           margin: 0 auto;
           content: "";
           border: 3px solid #303948;
+          -webkit-transition: border-color 600ms cubic-bezier(0.77, 0, 0.175, 1);
+          -ms-transition: border-color 600ms cubic-bezier(0.77, 0, 0.175, 1);
           transition: border-color 600ms cubic-bezier(0.77, 0, 0.175, 1); }
         #content .product_wrap .product_header .beside .next:hover:after {
           border-color: #2F8BE6; }
@@ -456,13 +483,28 @@ h3 {
           -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
           background-image: url("../img/project03.jpg");
-          background-position: center center;
           opacity: 0;
+          -webkit-transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+          -ms-transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1);
           transition: margin-top 600ms cubic-bezier(0.77, 0, 0.175, 1), opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1); }
+          #content .product_wrap .product_header .beside .next .next_img.kolon {
+            background: url("../img/project_kolon00.jpg") center center no-repeat;
+            background-size: auto 100%; }
           #content .product_wrap .product_header .beside .next .next_img.techwell {
-            background-image: url("../img/project_techwell00.png"); }
+            background: url("../img/project_techwell00.png") center center no-repeat;
+            background-size: auto 100%; }
           #content .product_wrap .product_header .beside .next .next_img.engineering {
-            background-image: url("../img/project_engineeringl00.jpg"); }
+            background: url("../img/project_engineering00.jpg") center center no-repeat;
+            background-size: auto 100%; }
+          #content .product_wrap .product_header .beside .next .next_img.beanspreso {
+            background: url("../img/project_beanspreso00.jpg") center center no-repeat;
+            background-size: auto 100%; }
+          #content .product_wrap .product_header .beside .next .next_img.songdo {
+            background: url("../img/project_songdo00.jpg") center center no-repeat;
+            background-size: auto 100%; }
+          #content .product_wrap .product_header .beside .next .next_img.webzine {
+            background: url("../img/project_webzin00.jpg") center center no-repeat;
+            background-size: auto 100%; }
         #content .product_wrap .product_header .beside .next:hover .next_img {
           margin-top: 50px;
           opacity: 1; }
@@ -508,7 +550,7 @@ h3 {
         position: absolute;
         bottom: 35px;
         left: 50%;
-        margin-left: -18px; }
+        margin-left: -9px; }
         #content .product_wrap .product_header .header_footer .updown span {
           display: block;
           width: 5px;
@@ -605,7 +647,7 @@ h3 {
     text-align: left;
     padding: 115px 10% 0 10%; }
     #content .case_Study .case_preview .title {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       overflow: hidden; }
       #content .case_Study .case_preview .title h2 {
         margin-bottom: 5px;
@@ -632,7 +674,7 @@ h3 {
         width: 75%;
         float: left;
         line-height: 1.75; }
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 768px) {
           #content .case_Study .case_preview .title .left {
             width: 100%;
             margin-bottom: 30px; } }
@@ -641,7 +683,9 @@ h3 {
         width: 20%;
         float: right;
         line-height: 1.75; }
-        @media screen and (max-width: 450px) {
+        #content .case_Study .case_preview .title .right .url {
+          margin-top: 10px; }
+        @media screen and (max-width: 768px) {
           #content .case_Study .case_preview .title .right {
             width: 100%; } }
       #content .case_Study .case_preview .title .case_btn {
@@ -708,13 +752,15 @@ h3 {
         left: 0; }
       #content .case_Study .case_preview .modal .close {
         position: fixed;
-        top: 0;
-        right: 15px;
+        top: 5%;
+        right: 5%;
         margin: 20px;
         color: #fff;
         display: block;
         width: 20px;
-        height: 20px; }
+        height: 20px;
+        z-index: 500;
+        cursor: pointer; }
       #content .case_Study .case_preview .modal .image {
         margin: 0 auto;
         max-width: 80%;

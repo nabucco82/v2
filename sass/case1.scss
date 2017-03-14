@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'common';
 
 
@@ -35,12 +36,29 @@
       width: 100%;
       height: 100%;
       background-attachment: fixed;
-
+      -webkit-filter: blur(2px) grayscale(100%);
+      -ms-filter: blur(2px) grayscale(100%);
+      filter: blur(2px) grayscale(100%);
+      &.kolon{
+        background:url("../img/project_kolon00.jpg") center 0/cover no-repeat #efefef;
+      }
       &.techwell{
-        background: url("../img/techwell_top.jpg") center 0/cover no-repeat #efefef;
+        background: url("../img/project_techwell00.png") center 0/cover no-repeat #efefef;
       }
       &.engineering{
-        background: url("../img/bg_engineering.jpg") center 0/cover no-repeat #efefef;
+        background: url("../img/project_engineering00.jpg") center 0/cover no-repeat #efefef;
+      }
+      &.iwiil{
+        background:url("../img/project_iwiil00.jpg") center 0/cover no-repeat #efefef;
+      }
+      &.beanspreso{
+        background: url("../img/project_beanspreso00.jpg") center 0/cover no-repeat #efefef;
+      }
+      &.songdo{
+        background: url("../img/project_songdo00.jpg") center 0/cover no-repeat #efefef;
+      }
+      &.webzine{
+        background: url("../img/project_webzin00.jpg") center 0/cover no-repeat #efefef;
       }
            
     }
@@ -49,16 +67,27 @@
       margin: 0 auto;
       width: 100%;
       top:50%;
-      margin-top:-45px;
+      margin-top:-83px;
       
       text-align:center;
       .title {
-        font-size: 55px;
+        font-size: 45px;
+        font-weight: 200;
+        line-height:55px;
         margin: 10px 0 10px 0;
-        font-family:'NotoSans-Light';
-
-        @media screen and (max-width: $break-small){
+        font-family:'Noto Sans KR', sans-serif;
+        @media screen and (max-width: $break-large){
           font-size:30px;
+        }
+        strong{
+          font-size:55px;
+          display:block;
+          margin-bottom:10px;
+          color:#fff;
+          line-height:55px;
+          @media screen and (max-width: $break-large){
+          font-size:45px;
+        }
         }
         
       }
@@ -126,12 +155,26 @@
           background-image:url("../img/project03.jpg");
           background-position:center center;
           opacity:0;
+          -webkit-transition:margin-top 600ms cubic-bezier(0.77,0,.175,1), opacity 1.5s cubic-bezier(0.77,0,.175,1);
+          -ms-transition:margin-top 600ms cubic-bezier(0.77,0,.175,1), opacity 1.5s cubic-bezier(0.77,0,.175,1);
           transition:margin-top 600ms cubic-bezier(0.77,0,.175,1), opacity 1.5s cubic-bezier(0.77,0,.175,1);
+          &.kolon{
+            background:url("../img/project_kolon00.jpg") center no-repeat;
+          }
           &.techwell{
-            background-image:url("../img/project_techwell00.jpg")
+            background:url("../img/project_techwell00.png") center no-repeat;
           }
           &.engineering{
-            background-image:url("../img/project_engineeringl00.jpg")
+            background:url("../img/project_engineering00.jpg") center no-repeat;
+          }
+          &.beanspreso{
+            background: url("../img/project_beanspreso00.jpg");
+          }
+          &.songdo{
+            background: url("../img/project_songdo00.jpg") center no-repeat; 
+          }
+          &.webzine{
+            background: url("../img/project_webzin00.jpg") center no-repeat; 
           }
         }
         &:hover .prv_img{
@@ -155,6 +198,8 @@
           margin:0 auto;
           content:"";
           border:3px solid $gray;
+          -webkit-transition: border-color 600ms cubic-bezier(0.77,0,.175,1);
+          -ms-transition: border-color 600ms cubic-bezier(0.77,0,.175,1);
           transition: border-color 600ms cubic-bezier(0.77,0,.175,1);
         }
         &:hover:after{
@@ -173,14 +218,33 @@
           -ms-transform:rotate(-90deg);
           transform:rotate(-90deg);
           background-image:url("../img/project03.jpg");
-          background-position:center center;
           opacity:0;
+          -webkit-transition:margin-top 600ms cubic-bezier(0.77,0,.175,1), opacity 1.5s cubic-bezier(0.77,0,.175,1);
+          -ms-transition:margin-top 600ms cubic-bezier(0.77,0,.175,1), opacity 1.5s cubic-bezier(0.77,0,.175,1);
           transition:margin-top 600ms cubic-bezier(0.77,0,.175,1), opacity 1.5s cubic-bezier(0.77,0,.175,1);
+          &.kolon{
+            background:url("../img/project_kolon00.jpg") center center no-repeat;
+            background-size:auto 100%;
+          }
           &.techwell{
-            background-image:url("../img/project_techwell00.png")
+            background:url("../img/project_techwell00.png") center center no-repeat;
+            background-size:auto 100%;
           }
           &.engineering{
-            background-image:url("../img/project_engineeringl00.jpg")
+            background:url("../img/project_engineering00.jpg") center center no-repeat;
+            background-size:auto 100%;
+          }
+          &.beanspreso{
+            background: url("../img/project_beanspreso00.jpg") center center no-repeat;
+            background-size:auto 100%;
+          }
+          &.songdo{
+            background: url("../img/project_songdo00.jpg") center center no-repeat;
+            background-size:auto 100%; 
+          }
+          &.webzine{
+            background: url("../img/project_webzin00.jpg") center center no-repeat;
+            background-size:auto 100%; 
           }
         }
         &:hover .next_img{
@@ -238,7 +302,7 @@
         position:absolute;
         bottom:35px;
         left:50%;
-        margin-left:-18px;
+        margin-left:-9px;
         span{
           display: block;
           width: 5px;
@@ -351,7 +415,7 @@
         text-align:left;
         padding:115px 10% 0 10%;
           .title{
-            margin-bottom:100px;
+            margin-bottom:50px;
             overflow:hidden;
             h2{
                 margin-bottom:5px;
@@ -384,7 +448,7 @@
               width:75%;
               float:left;
               line-height:1.75;
-              @media screen and (max-width : $break-small){
+              @media screen and (max-width : $break-large){
                 width:100%; 
                 margin-bottom:30px;
               }
@@ -394,7 +458,10 @@
               width:20%;
               float:right;
               line-height:1.75;
-              @media screen and (max-width : $break-small){
+              .url{
+                margin-top:10px;
+              }
+              @media screen and (max-width : $break-large){
                 width:100%; 
               }
             }
@@ -408,6 +475,7 @@
               margin-bottom:4em;
             }
           }
+          
           .pre_content{
             max-width:1120px;            
             overflow:hidden;
@@ -473,13 +541,15 @@
               }
             .close{
               position:fixed;
-              top:0;
-              right:15px; 
+              top:5%;
+              right:5%; 
               margin:20px;
               color:#fff;
               display:block;
               width:20px;
               height:20px;
+              z-index:500;
+              cursor:pointer;
               }
             .image{
               margin:0 auto; 

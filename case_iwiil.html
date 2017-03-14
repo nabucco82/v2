@@ -3,63 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 user-scalable=no"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--최신모드로 지정된 doctype에 상관없이 IE8 이상 버전에서 항상 최신 표준 모드로 렌더링.-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
 	<title>산업노동정책연구소 - LEE SANG KI</title>
-	<script src="js/jquery-1.12.4.min.js"></script>
-  	<script src="js/jquery-ui.min.js"></script> 
-  	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="css/common.css">
   	<link rel="stylesheet" type="text/css" href="css/case1.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  	<script>
-  		$(function(){
-  			$("#menu_toggle").on({
-  				click : function(){
-  					if($(this).hasClass("on") == true){
-  						$(this).removeClass("on");
-  						$("#header .sidebar").css({"width":"0px"});
-  						$("#header .gnb .action").css({"padding-right":"49px"});
-  					}else if($(this).hasClass("on") == false){
-  					$(this).addClass("on");
-  						$("#header .sidebar").css({"width":"230px"});
-  						$("#header .gnb .action").css({"padding-right":"210px"});
-  					}
-  				}
-  			});
-  			
-  		});
-  	</script>
-  	<script>
-  		$(window).scroll(function(){
-  			var st = $(window).scrollTop();
-  			console.log(st);
-  				$(".bar_background").css({"opacity": (st * 0.01) });
-  				$(".product_header .background").css({"opacity":(0.2- 0.001*st)});
-  				
-  			if( st > 100){
-  				$(".bar_background").css({"opacity": (st * 0.01) });
-  			} else{
-  				$(".bar_background").css({"opacity":0});
-  			}
-  		});
-  	</script>
-  	<script>
-  	var lastScrollTop = 0;
-    $(window).on('scroll', function() {
-        st = $(this).scrollTop();
-        if(st < lastScrollTop) {
-        	// upscroll code
-            // console.log('up 1');
-            $("#header").css({"top":"0"});
-        }
-        else {
-            // downscroll code
-            // console.log('down 1');
-            $("#header").css({"top":"-100px"});
-        }
-        lastScrollTop = st;
-        console.log(st);
-    });
-  	</script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+  	<script src="js/jquery-ui.min.js"></script> 
+  	<script src='js/isotope.pkgd.min.js'></script>
+  	<script src="js/v1.js"></script>
+  	<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div id="wrap">
@@ -102,23 +63,23 @@
 					<div class="background iwiil"></div>
 					<div class="title_wrap">
 						<div class="sub_title">
-							<!-- <a href="#" title="#" class="btn btn_blue">HTML5</a>
-							<a href="#" title="#" class="btn btn_blue">CSS3</a>  -->
-							<a href="#" title="#" class="btn btn_blue">Design</a>
+							<span class="btn btn_blue">HTML</span>
+							<span class="btn btn_blue">CSS</span> 
+							<span class="btn btn_blue">Design</span>
 						</div>
-						<h2 class="title"><strong>산업노동정책연구소</strong>사이트</h2>
+						<h2 class="title"><strong>산업노동정책연구소</strong>웹사이트 리뉴얼</h2>
 					</div>
 					<div class="beside">
-						<div class="prev">
+						<!-- <div class="prev">
 							<a href="#" title="prev">
 							PREV
 							<span class="prv_img">
 							</span>
 							</a>
-						</div>
+						</div> -->
 						<div class="next">
-							<a href="#" title="next">NEXT
-							<span class="next_img"></span>
+							<a href="case_beanspreso.html" title="next">NEXT
+							<span class="next_img beanspreso"></span>
 							</a>
 						</div>
 					</div>
@@ -153,6 +114,9 @@
 							<li class="company">산업노동정책연구소</li>
 							<li class="openday">2010년 1월</li>
 							<li class="keyword">웹퍼블리싱, 웹디자인</li>
+							<li class="url">
+								<a href="http://iwiil.net" class="btn btn_blue">사이트 바로가기</a>
+							</li>
 							</ul>
 						</div>	
 					</div>
@@ -199,65 +163,6 @@
 							</p>
 						</div>
 					</div>
-					<script>
-						$(function(){
-							$('.fullpreview').on( 'click', function(){
-								// $('.case_preview .modal').find('popup').removeClass('popup');
-								$('.case_preview .modal').addClass('popup');
-							});
-
-							$('.close').on( 'click', function() {
-								
-								$('.modal').removeClass('popup');
-									
-
-
-							});
-						});
-					</script>
-					<script>
-						// prodcut_header 높이값 설정
-						$(function(){
-							$(".product_header").height( $(window).height() );
-							var $windowH = $(window).height();
-								
-								$(".updown").on( 'click' , function(){
-									 $('html, body').stop().animate({
-	        								scrollTop : $windowH
-	   										 });
-									
-
-								});	
-
-
-							$(window).resize(function(){
-								$(".product_header").height( $(window).height());
-										var $windowH2 = $(window).height();
-
-									$(".updown").on( 'click' , function(){
-										 $('html, body').stop().animate({
-	            								scrollTop : $windowH2
-	       										 }, 500);
-									$("#header").css({"top":"0"});
-
-									});	
-								});
-							$(".btn_top button").click(function() {
-		        				$("html, body").animate({ scrollTop : 0 }, 500 );
-		   					 });
-
-						});
-						 
-
-						 $(window).scroll( function() {
-						 	if( $(document).scrollTop() < $(window).height()){
-								$(".btn_top").css("display" ,"none");
-
-							}else{
-								$(".btn_top").css("display" , "block" );
-							}
-						 });
-					</script>
 				</div>				
 			</div>
 		</div>
@@ -275,7 +180,5 @@
 		<!-- // btn_top 종료 -->	
 	</div>
 	<!-- // wrap -->
-
-
 </body>
 </html>
