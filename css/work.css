@@ -7,7 +7,7 @@
 html {
   font-size: 16px;
   color: #fff;
-  background-color: #353535;
+  background-color: #2a2a2a;
   font-family: "CircularStd-Book"; }
 
 a:link, a:visited {
@@ -15,7 +15,7 @@ a:link, a:visited {
   color: #fff; }
 
 ::selection {
-  background: #2F8BE6;
+  background: #ef5e32;
   color: #fff; }
 
 button {
@@ -33,6 +33,9 @@ h2 {
 h3 {
   font-size: 0.75em; }
 
+input {
+  border: none; }
+
 .btn {
   display: inline-block;
   border-radius: 2px;
@@ -48,7 +51,7 @@ h3 {
     background-color: #fff;
     color: #333; }
   .btn.btn_blue {
-    background-color: #2F8BE6;
+    background-color: #1e86f9;
     color: #fff; }
   .btn.btn_gray {
     background-color: #484848;
@@ -284,7 +287,7 @@ h3 {
     color: #9397a5;
     letter-spacing: -0.25px; }
     #footer span strong {
-      color: #2F8BE6; }
+      color: #1e86f9; }
 
 .btn_top {
   position: fixed;
@@ -359,7 +362,7 @@ h3 {
           width: 300px;
           margin-left: -150px;
           height: 3px;
-          background-color: #2F8BE6;
+          background-color: #1e86f9;
           transition: width 600ms cubic-bezier(0.77, 0, 0.175, 1), margin-left 600ms cubic-bezier(0.77, 0, 0.175, 1); }
         #content .product_wrap .product_header .title_wrap .title:hover:after {
           width: 0px;
@@ -395,7 +398,7 @@ h3 {
         color: #AFAFAF;
         line-height: 33px; }
         #content .product_wrap .product_header .title_wrap .publisher:before {
-          border: 3px solid #2F8BE6; }
+          border: 3px solid #1e86f9; }
       #content .product_wrap .product_header .title_wrap .published {
         color: #AFAFAF;
         line-height: 33px; }
@@ -427,7 +430,7 @@ h3 {
           border: 3px solid #2a2a2a;
           transition: border-color 600ms cubic-bezier(0.77, 0, 0.175, 1); }
         #content .product_wrap .product_header .beside .prev:hover:after {
-          border-color: #2F8BE6; }
+          border-color: #1e86f9; }
       #content .product_wrap .product_header .beside .next {
         width: 10%;
         float: right;
@@ -445,7 +448,7 @@ h3 {
           border: 3px solid #2a2a2a;
           transition: border-color 600ms cubic-bezier(0.77, 0, 0.175, 1); }
         #content .product_wrap .product_header .beside .next:hover:after {
-          border-color: #2F8BE6; }
+          border-color: #1e86f9; }
     #content .product_wrap .product_header .header_footer {
       width: 100%;
       box-sizing: border-box;
@@ -466,7 +469,7 @@ h3 {
           #content .product_wrap .product_header .header_footer .left .info a {
             margin-right: 10px; }
             #content .product_wrap .product_header .header_footer .left .info a:hover {
-              color: #2F8BE6; }
+              color: #1e86f9; }
       #content .product_wrap .product_header .header_footer .right {
         float: right;
         text-align: right;
@@ -486,8 +489,8 @@ h3 {
           -webkit-transition: all .3s ease;
           transition: all .3s ease; }
           #content .product_wrap .product_header .header_footer .right .socials a:hover {
-            background-color: #2F8BE6;
-            border-color: #2F8BE6;
+            background-color: #1e86f9;
+            border-color: #1e86f9;
             color: #fff; }
   #content .product_content {
     margin: 115px auto 0;

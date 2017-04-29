@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import 'common';
+
 #content {
   position: relative;
   padding: 78px 0 0 0;
@@ -10,7 +11,7 @@
     height:350px;
     margin: -75px 0 0px 0;
     // padding: 200px 0 200px 0;
-    background-color: $black;
+    background-color: $blue;
     background-size: 1104px 549px;
     &:after {
       position: absolute;
@@ -238,15 +239,13 @@
     background-color:#fff;
     box-shadow: 0px 2px 18px rgba(42, 42, 42, 0.3);;
       h2{
-        font-size:35px;
-        font-family:"Noto-Thin";
+        font-size:25px;
         color:#333;
         text-align:center;
         margin-bottom:10px;        
       }
       .sub_title{
         font-size:12px; 
-        font-family:"Noto-Thin";
         color:#797e8b;
         text-align:center;
         margin-bottom:30px;
