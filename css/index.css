@@ -325,11 +325,10 @@ input {
       display: block;
       box-shadow: inset 0 -10px 10px 0 rgba(0, 0, 0, 0.09); }
     #content .product_wrap .product_header .background {
-      background: #efefef;
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 0;
+      z-index: 10;
       width: 100%;
       height: 100%;
       background-attachment: fixed; }

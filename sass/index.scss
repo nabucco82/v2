@@ -23,12 +23,12 @@
       box-shadow: inset 0 -10px 10px 0 rgba(0, 0, 0, 0.09);
     }
     .background {
-      background: #efefef;
+      // background: #efefef;
       position: absolute;
       // opacity: 0.2;
       top: 0;
       left: 0;
-      z-index: 0;
+      z-index: 10;
       width: 100%;
       height: 100%;
       // -webkit-filter: grayscale(100%);

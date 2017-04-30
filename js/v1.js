@@ -1,27 +1,27 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-// 초기 애니메이션 숨기기
-$("#header .gnb").hide();
-$("#menu_toggle").hide();
-$(".header_footer .right").hide();
-$(".header_footer .left").hide();
-
-
-//네비, 푸터, 텍스트 나타나는 애니메이션
-setTimeout(function(){
-// $("#header .gnb").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
-// $("#menu_toggle").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
-$(".header_footer .right").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
-// $(".header_footer .left").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
-}, 1600);
-
-setTimeout(function(){
-$(".product_header .background").hide("blind",{direction: "right", easing: "easeInOutExpo"},1200);
-},2000);
+// // 초기 애니메이션 숨기기
+// $("#header .gnb").hide();
+// $("#menu_toggle").hide();
+// $(".header_footer .right").hide();
+// $(".header_footer .left").hide();
 
 
+// //네비, 푸터, 텍스트 나타나는 애니메이션
+// setTimeout(function(){
+// // $("#header .gnb").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
+// // $("#menu_toggle").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
+// $(".header_footer .right").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
+// // $(".header_footer .left").show("blind",{direction: "left", easing :"easeInOutExpo"},1000);
+// }, 1600);
 
-});
+// setTimeout(function(){
+// $(".product_header .background").hide("blind",{direction: "right", easing: "easeInOutExpo"},1200);
+// },2000);
+
+
+
+// });
 
 
 
